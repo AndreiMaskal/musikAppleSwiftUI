@@ -11,13 +11,10 @@ struct TableView: View {
     var body: some View {
         ZStack {
             TabView {
-                NavigationView {
-                    LibraryView()
-                }
+                LibraryView()
                 .tabItem {
                     Image(systemName: "music.note.tv.fill")
                     Text("Медиатека")
-                        
                 }
                 
                 Text("Радио")
@@ -33,9 +30,9 @@ struct TableView: View {
                     }
             }
             .accentColor(.red)
+            
             PlayerView()
                 .offset(y: -30)
-
         }
     }
 }

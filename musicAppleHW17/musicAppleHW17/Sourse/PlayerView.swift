@@ -8,53 +8,49 @@
 import SwiftUI
 
 struct PlayerView: View {
-    
+
     var body: some View {
         VStack {
             Spacer()
             HStack() {
-                HStack {
-                    ZStack {
-                        Rectangle()
-                            .foregroundColor(Color(red: 0.9,
-                                                   green: 0.9,
-                                                   blue: 0.9))
-                            .frame(width: 50, height: 50)
-                            .cornerRadius(9)
-                            .shadow(radius: 6)
-                            .padding()
-                        Image(systemName: "music.note")
-                            .foregroundColor(Color.gray)
-                    }
+                Image("Face-smile.svg-2")
+                    .resizable()
+                    .frame(width: 40, height: 40, alignment: .center)
                     .padding()
-                    Text("Не исполняется").foregroundColor(.gray)
-                    Spacer()
+                    .foregroundColor(Color.gray)
+                
+                VStack(alignment: .leading) {
+                    Text("Исполнитель")
+                        .font(.headline)
+                    Text("Песня")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                }
+
+                Spacer()
+                
                     Button(action: {}) {
                         Image(systemName: "play.fill")
                             .font(.title3)
-                            .foregroundColor(.gray)
+                            .foregroundColor(.red)
                     }.buttonStyle(PlainButtonStyle())
+                
                     Button(action: {}) {
                         Image(systemName: "forward.fill")
                             .font(.title3)
-                            .foregroundColor(.gray)
+                            .foregroundColor(.red)
                     }.buttonStyle(PlainButtonStyle())
                         .padding()
                 }
-                .background(Color(red: 0.9,
-                                  green: 0.9,
-                                  blue: 0.9))
+            .background(Color.white)
             }
             .overlay(Divider(), alignment: .bottom)
             .padding(.bottom)
         }
     }
-    
-}
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView()
-            .previewLayout(.fixed(width: 400, height: 100))
     }
 }

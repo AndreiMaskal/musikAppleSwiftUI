@@ -21,17 +21,7 @@ struct ListView: View {
             }
         }
         .environment(\.editMode, .constant(.active))
-        .listStyle(.plain)
-        .navigationTitle("Медиатека")
-        .navigationBarItems(
-            trailing: NavigationLink(
-                destination:
-                    LibraryView(),
-                label: {
-                    Text("Готово")
-                        .foregroundColor(.red)
-                }))
-        .navigationBarBackButtonHidden(true)
+        .listStyle(.grouped)
     }
 
 func move(from source: IndexSet, to destination: Int) {
