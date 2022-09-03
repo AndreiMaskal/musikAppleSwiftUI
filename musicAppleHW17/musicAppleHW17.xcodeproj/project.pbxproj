@@ -56,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				A0A9917228BD29C300041A73 /* Preview Assets.xcassets */,
-				A0A9916F28BD29C300041A73 /* Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -90,6 +89,7 @@
 		A0A9917928BD2B2400041A73 /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				A0A9916F28BD29C300041A73 /* Assets.xcassets */,
 			);
 			path = Resourse;
 			sourceTree = "<group>";
