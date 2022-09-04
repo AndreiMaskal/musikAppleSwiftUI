@@ -11,6 +11,11 @@
 		A07D51E728BEABFE006FC78D /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D51E628BEABFE006FC78D /* PlayListModel.swift */; };
 		A07D51E928BEAC85006FC78D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D51E828BEAC85006FC78D /* ListView.swift */; };
 		A07D51EB28BEACAE006FC78D /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07D51EA28BEACAE006FC78D /* MusicView.swift */; };
+		A094474728C50EC8008298C0 /* RadioMolel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094474628C50EC8008298C0 /* RadioMolel.swift */; };
+		A094474928C50F15008298C0 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094474828C50F15008298C0 /* RadioView.swift */; };
+		A094474B28C50F54008298C0 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094474A28C50F54008298C0 /* RadioStation.swift */; };
+		A094474D28C50F9A008298C0 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094474C28C50F9A008298C0 /* StationView.swift */; };
+		A094474F28C51011008298C0 /* RadioSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A094474E28C51011008298C0 /* RadioSectionView.swift */; };
 		A0A9916C28BD29C100041A73 /* musicAppleHW17App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9916B28BD29C100041A73 /* musicAppleHW17App.swift */; };
 		A0A9917028BD29C300041A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A9916F28BD29C300041A73 /* Assets.xcassets */; };
 		A0A9917328BD29C300041A73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A9917228BD29C300041A73 /* Preview Assets.xcassets */; };
@@ -23,6 +28,11 @@
 		A07D51E628BEABFE006FC78D /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
 		A07D51E828BEAC85006FC78D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A07D51EA28BEACAE006FC78D /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		A094474628C50EC8008298C0 /* RadioMolel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioMolel.swift; sourceTree = "<group>"; };
+		A094474828C50F15008298C0 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		A094474A28C50F54008298C0 /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		A094474C28C50F9A008298C0 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
+		A094474E28C51011008298C0 /* RadioSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioSectionView.swift; sourceTree = "<group>"; };
 		A0A9916828BD29C100041A73 /* musicAppleHW17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicAppleHW17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A9916B28BD29C100041A73 /* musicAppleHW17App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicAppleHW17App.swift; sourceTree = "<group>"; };
 		A0A9916F28BD29C300041A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +68,45 @@
 				A0A9917228BD29C300041A73 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A094474228C50DFB008298C0 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				A094474528C50E82008298C0 /* Model */,
+				A094474828C50F15008298C0 /* RadioView.swift */,
+				A094474A28C50F54008298C0 /* RadioStation.swift */,
+				A094474C28C50F9A008298C0 /* StationView.swift */,
+				A094474E28C51011008298C0 /* RadioSectionView.swift */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		A094474328C50E0C008298C0 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9917D28BD369D00041A73 /* LibraryView.swift */,
+				A07D51E328BEA78E006FC78D /* PlayerView.swift */,
+				A07D51E528BEABCB006FC78D /* Model */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A094474428C50E56008298C0 /* MainConroller */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9916B28BD29C100041A73 /* musicAppleHW17App.swift */,
+				A0A9917B28BD314400041A73 /* TableView.swift */,
+			);
+			path = MainConroller;
+			sourceTree = "<group>";
+		};
+		A094474528C50E82008298C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A094474628C50EC8008298C0 /* RadioMolel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A0A9915F28BD29C100041A73 = {
@@ -97,11 +146,9 @@
 		A0A9917A28BD2B2700041A73 /* Sourse */ = {
 			isa = PBXGroup;
 			children = (
-				A07D51E528BEABCB006FC78D /* Model */,
-				A0A9916B28BD29C100041A73 /* musicAppleHW17App.swift */,
-				A0A9917B28BD314400041A73 /* TableView.swift */,
-				A0A9917D28BD369D00041A73 /* LibraryView.swift */,
-				A07D51E328BEA78E006FC78D /* PlayerView.swift */,
+				A094474428C50E56008298C0 /* MainConroller */,
+				A094474328C50E0C008298C0 /* Player */,
+				A094474228C50DFB008298C0 /* Radio */,
 			);
 			path = Sourse;
 			sourceTree = "<group>";
@@ -176,12 +223,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A094474F28C51011008298C0 /* RadioSectionView.swift in Sources */,
 				A0A9917C28BD314400041A73 /* TableView.swift in Sources */,
 				A07D51E728BEABFE006FC78D /* PlayListModel.swift in Sources */,
 				A07D51EB28BEACAE006FC78D /* MusicView.swift in Sources */,
+				A094474728C50EC8008298C0 /* RadioMolel.swift in Sources */,
 				A07D51E928BEAC85006FC78D /* ListView.swift in Sources */,
+				A094474D28C50F9A008298C0 /* StationView.swift in Sources */,
 				A0A9917E28BD369E00041A73 /* LibraryView.swift in Sources */,
+				A094474928C50F15008298C0 /* RadioView.swift in Sources */,
 				A0A9916C28BD29C100041A73 /* musicAppleHW17App.swift in Sources */,
+				A094474B28C50F54008298C0 /* RadioStation.swift in Sources */,
 				A07D51E428BEA78E006FC78D /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

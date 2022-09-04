@@ -12,13 +12,14 @@ struct TableView: View {
         ZStack {
             TabView {
                 LibraryView()
-                .tabItem {
-                    Image(systemName: "music.note.tv.fill")
-                    Text("Медиатека")
-                }
-                
-                Text("Радио")
                     .tabItem {
+                        Image(systemName: "music.note.tv.fill")
+                        Text("Медиатека")
+                    }
+                
+                RadioView()
+                    .tabItem {
+                        Text("Радио")
                         Image(systemName: "radio.fill")
                         Text("Радио")
                     }
