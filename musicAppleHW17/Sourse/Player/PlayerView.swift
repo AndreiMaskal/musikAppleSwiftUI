@@ -49,43 +49,35 @@ struct PlayerView: View {
                         Spacer()
                         
                         Button {
-                            print("play")
                         } label: {
                             PlayerButtonImage(systemName: "play.fill", size: 25)
                         }
                         
                         Button {
-                            print("play")
                         } label: {
                             PlayerButtonImage(systemName: "forward.fill", size: 25)
                         }
                     }
                 }
                 
-                // MARK: - Expanded view
-                
                 if expand {
                     VStack {
                         HStack {
-                            //                        if expand {
+            
                             VStack(alignment: .leading, spacing: 10) {
                                 Text("Песня")
                                     .font(.title3)
-                                //                                    .foregroundColor(.white)
-                                //                                   .matchedGeometryEffect(id: "Title", in: animation)
-                                
+                                                        
                                 Text("Исполнитель")
                                     .foregroundColor(.secondary)
-                                //                                    .padding(.top, 3)
-                                //                                .matchedGeometryEffect(id: "Label", in: animation)
+                        
                             }
                             .matchedGeometryEffect(id: "Title", in: animation)
-                            //   }
+                    
                             
                             Spacer()
                             
                             Button {
-                                print("more...")
                             } label: {
                                 PlayerButtonImage(systemName: "ellipsis", size: 20)
                             }
@@ -112,7 +104,7 @@ struct PlayerView: View {
                         
                         
                     }
-                    //                    .matchedGeometryEffect(id: "Title", in: animation)
+
                     .frame(width: expand ? nil : 0, height: expand ? nil : 0)
                     .opacity(expand ? 1 : 0)
                 }
@@ -121,25 +113,18 @@ struct PlayerView: View {
                 }
             }
         }
-        
-        .onTapGesture(count: 1) {
+      
+        .onTapGesture(count: 2) {
             withAnimation(.spring()){
                 expand.toggle()
             }
         }
+        
     }
 }
-
-//struct PlayerView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PlayerView()
-//            .previewLayout(.fixed(width: 400, height: 100))
-//    }
-//}
 
 enum Metric {
     static var playerHeight: CGFloat = 90
     static var screenHeight = UIScreen.main.bounds.height
-    //    static var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
 }
 
