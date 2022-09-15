@@ -21,7 +21,7 @@ struct AlbumCategoryModel: Identifiable, Hashable {
         AlbumCategoryModel(titleDescription: "Родные песни",
                    title: "Apple Music Хиты на русском",
                    image: "Face-smile.svg-2"),
-        AlbumCategoryModel(titleDescription: "Песни для детей: главное",
+        AlbumCategoryModel(titleDescription: "Песни для детей",
                    title: "Apple Music",
                    image: "Face-smile.svg-2"),
         AlbumCategoryModel(titleDescription: "Золотой запас",
