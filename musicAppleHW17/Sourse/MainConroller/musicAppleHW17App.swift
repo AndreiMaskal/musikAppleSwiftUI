@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct musicAppleHW17App: App {
+    
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TableView()
+                .environmentObject(modelData)
+                
         }
     }
 }
+
